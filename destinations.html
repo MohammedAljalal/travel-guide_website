@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Compare Destinations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo">Wanderlust</a>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Header -->
+        <div class="page-header header-destinations">
+            <h1 class="reveal">Global Destinations</h1>
+        </div>
+
+        <section class="p-5">
+            <!-- Filter Buttons -->
+            <div class="filter-container reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="saudi">Saudi Arabia</button>
+                <button class="filter-btn" data-filter="europe">Europe</button>
+                <button class="filter-btn" data-filter="asia">Asia</button>
+                <button class="filter-btn" data-filter="middle-east">Middle East</button>
+            </div>
+
+            <!-- Destinations Grid -->
+            <div class="card-grid" style="padding: 0; margin-bottom: 6rem;">
+                <article class="card dest-card" data-category="saudi middle-east">
+                    <div class="card-img-wrapper"><img src="https://picsum.photos/600/400?random=11" alt="Neom"></div>
+                    <div class="card-content">
+                        <h3>Neom</h3>
+                        <p>The city of the future, blending nature and technology.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-compass" style="margin-right: 8px;"></i> Explore</a>
+                    </div>
+                </article>
+                <article class="card dest-card" data-category="saudi middle-east">
+                    <div class="card-img-wrapper"><img src="https://picsum.photos/600/400?random=12" alt="AlUla"></div>
+                    <div class="card-content">
+                        <h3>AlUla</h3>
+                        <p>Ancient sandstone canyons and luxury desert resorts.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-compass" style="margin-right: 8px;"></i> Explore</a>
+                    </div>
+                </article>
+                <article class="card dest-card" data-category="saudi middle-east">
+                    <div class="card-img-wrapper"><img src="https://picsum.photos/600/400?random=13" alt="Riyadh"></div>
+                    <div class="card-content">
+                        <h3>Riyadh</h3>
+                        <p>The vibrant capital blending history with modern luxury.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-compass" style="margin-right: 8px;"></i> Explore</a>
+                    </div>
+                </article>
+                <article class="card dest-card" data-category="europe">
+                    <div class="card-img-wrapper"><img src="https://picsum.photos/600/400?random=14" alt="Paris"></div>
+                    <div class="card-content">
+                        <h3>Paris</h3>
+                        <p>The romantic city of light, art, and exceptional cuisine.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-compass" style="margin-right: 8px;"></i> Explore</a>
+                    </div>
+                </article>
+                <article class="card dest-card" data-category="asia">
+                    <div class="card-img-wrapper"><img src="https://picsum.photos/600/400?random=15" alt="Tokyo"></div>
+                    <div class="card-content">
+                        <h3>Tokyo</h3>
+                        <p>A dazzling metropolis where ancient traditions meet modernity.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-compass" style="margin-right: 8px;"></i> Explore</a>
+                    </div>
+                </article>
+                <article class="card dest-card" data-category="middle-east">
+                    <div class="card-img-wrapper"><img src="https://picsum.photos/600/400?random=16" alt="Dubai"></div>
+                    <div class="card-content">
+                        <h3>Dubai</h3>
+                        <p>A city of superlatives featuring unparalleled luxury shopping.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-compass" style="margin-right: 8px;"></i> Explore</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Comparison Table -->
+            <h2 class="section-title reveal">Destination Comparison</h2>
+            <div class="table-wrapper reveal">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><i class="fa-solid fa-city" style="margin-right: 8px;"></i> City</th>
+                            <th><i class="fa-solid fa-cloud-sun" style="margin-right: 8px;"></i> Weather</th>
+                            <th><i class="fa-solid fa-language" style="margin-right: 8px;"></i> Language</th>
+                            <th><i class="fa-solid fa-money-bill" style="margin-right: 8px;"></i> Currency</th>
+                            <th><i class="fa-solid fa-calendar-days" style="margin-right: 8px;"></i> Best Season</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Neom</strong></td>
+                            <td>Hot Desert</td>
+                            <td>Arabic, English</td>
+                            <td>SAR</td>
+                            <td>Winter</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AlUla</strong></td>
+                            <td>Dry & Warm</td>
+                            <td>Arabic</td>
+                            <td>SAR</td>
+                            <td>Autumn-Spring</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Riyadh</strong></td>
+                            <td>Arid</td>
+                            <td>Arabic</td>
+                            <td>SAR</td>
+                            <td>Winter</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paris</strong></td>
+                            <td>Temperate</td>
+                            <td>French</td>
+                            <td>EUR</td>
+                            <td>Spring/Autumn</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tokyo</strong></td>
+                            <td>Subtropical</td>
+                            <td>Japanese</td>
+                            <td>JPY</td>
+                            <td>Spring</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dubai</strong></td>
+                            <td>Hot Desert</td>
+                            <td>Arabic, English</td>
+                            <td>AED</td>
+                            <td>Winter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Highlights Sections -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 5rem;">
+                <div class="glass-panel reveal">
+                    <h3 class="mb-1" style="font-size: 1.3rem;"><i class="fa-solid fa-map-pin text-primary" style="margin-right: 10px;"></i> Top Ranked Attractions</h3>
+                    <ol class="text-secondary" style="margin-left: 1.5rem; line-height: 2;">
+                        <li>Eiffel Tower, Paris (Europe)</li>
+                        <li>Burj Khalifa, Dubai (Middle East)</li>
+                        <li>Hegra, AlUla (Saudi Arabia)</li>
+                        <li>Senso-ji Temple, Tokyo (Asia)</li>
+                        <li>The Line, Neom (Saudi Arabia)</li>
+                    </ol>
+                </div>
+                <div class="glass-panel reveal">
+                    <h3 class="mb-1" style="font-size: 1.3rem;"><i class="fa-solid fa-utensils text-primary" style="margin-right: 10px;"></i> Unforgettable Cuisines</h3>
+                    <ul class="text-secondary" style="list-style: none; line-height: 2;">
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px; font-size: 0.8rem;"></i> Authentic Kabsa (Saudi Arabia)</li>
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px; font-size: 0.8rem;"></i> Croissant & Macarons (France)</li>
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px; font-size: 0.8rem;"></i> Authentic Omokase (Japan)</li>
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px; font-size: 0.8rem;"></i> Luxury Shawarma (UAE)</li>
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px; font-size: 0.8rem;"></i> Premium Dates & Arabic Coffee (KSA)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo">Wanderlust</a>
+                <p class="mt-1 text-secondary" style="font-size: 0.9rem;">Elevating your travel experience. We craft bespoke journeys to the world's most captivating destinations.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="tips.html">Travel Tips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wanderlust Premium Travel. All rights reserved.</p>
+            <p class="live-clock mt-1 text-primary" style="font-size: 0.85rem; letter-spacing: 1px;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

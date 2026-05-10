@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Premium Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo">Wanderlust</a>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="hero-content reveal">
+                <h1>Experience True <br><span class="text-primary">Luxury</span></h1>
+                <div class="typewriter-container">
+                    Discover <span id="typewriter"></span><span class="cursor"></span>
+                </div>
+                <div class="mt-2">
+                    <a href="destinations.html" class="btn-primary" style="margin-right: 1rem;">Explore Destinations</a>
+                    <a href="contact.html" class="btn-primary btn-outline-white">Start Your Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Destinations -->
+        <section id="featured-destinations" class="p-5" style="background: var(--bg-surface-light);">
+            <h2 class="section-title reveal">Featured Destinations</h2>
+            <div class="card-grid">
+                <!-- Neom Card -->
+                <article class="card dest-card reveal" data-category="middle-east">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/600/400?random=1" alt="Neom City">
+                    </div>
+                    <div class="card-content">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Neom</h3>
+                        <p>The visionary city of the future, blending hyper-modern technology with untouched nature.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-arrow-right" style="margin-right: 8px;"></i> Learn More</a>
+                    </div>
+                </article>
+
+                <!-- AlUla Card -->
+                <article class="card dest-card reveal" data-category="middle-east">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/600/400?random=2" alt="AlUla">
+                    </div>
+                    <div class="card-content">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>AlUla</h3>
+                        <p>A mesmerizing journey through ancient sandstone monuments and luxury desert resorts.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-arrow-right" style="margin-right: 8px;"></i> Learn More</a>
+                    </div>
+                </article>
+
+                <!-- Paris Card -->
+                <article class="card dest-card reveal" data-category="europe">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Paris">
+                    </div>
+                    <div class="card-content">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Paris</h3>
+                        <p>The city of light, famous for its timeless romance, iconic art, and exquisite gastronomy.</p>
+                        <a href="destination-detail.html" class="btn-primary mt-1"><i class="fa-solid fa-arrow-right" style="margin-right: 8px;"></i> Learn More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="stats-section">
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-users stat-icon"></i>
+                <h3 class="counter" data-target="50000">0</h3>
+                <p>Happy Travelers</p>
+            </div>
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-map-location-dot stat-icon"></i>
+                <h3 class="counter" data-target="150">0</h3>
+                <p>Destinations</p>
+            </div>
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-plane-departure stat-icon"></i>
+                <h3 class="counter" data-target="1200">0</h3>
+                <p>Luxury Tours</p>
+            </div>
+            <div class="stat-box reveal">
+                <i class="fa-solid fa-star stat-icon"></i>
+                <h3 class="counter" data-target="10000">0</h3>
+                <p>5-Star Reviews</p>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="p-5" style="background: var(--bg-surface);">
+            <div class="max-w-800 text-center reveal">
+                <h2 class="section-title">Join the Elite</h2>
+                <p class="mb-2 text-secondary">Subscribe to receive curated luxury travel inspiration and exclusive early-access offers.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo">Wanderlust</a>
+                <p class="mt-1 text-secondary" style="font-size: 0.9rem;">Elevating your travel experience. We craft bespoke journeys to the world's most captivating destinations.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="tips.html">Travel Tips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wanderlust Premium Travel. All rights reserved.</p>
+            <p class="live-clock mt-1 text-primary" style="font-size: 0.85rem; letter-spacing: 1px;"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
